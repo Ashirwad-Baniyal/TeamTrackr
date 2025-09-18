@@ -1,12 +1,86 @@
-# React + Vite
+# 🚀 TeamTrackr 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **role-based task management application** built with React.  
+- 👨‍💼 **Admin** → Create and manage tasks for employees.  
+- 👨‍💻 **Employee** → Log in to view, track, and manage assigned tasks.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 Project Overview
+This project demonstrates a **React-based role management system** where different user roles (Admin & Employee) get separate dashboards.  
+- Admins can assign tasks and monitor employee activity.  
+- Employees can log in securely and view only their tasks.  
+- All data is stored locally using browser persistence.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+- 🔑 Role-based Authentication (Admin / Employee)  
+- 📌 Persistent login using LocalStorage  
+- 🖥️ Separate Dashboards for Admin & Employee  
+- 📋 Task creation, assignment, and tracking  
+- 📊 Employee task statistics overview  
+- 🎨 Minimal, modern UI with Tailwind CSS  
+
+---
+
+## 📂 Project Structure
+src/
+│── App.jsx
+│
+├── components/
+│ ├── auth/
+│ │ └── Login.jsx
+│ │
+│ ├── Dashboard/
+│ │ ├── AdminDashboard.jsx
+│ │ └── EmployeeDashboard.jsx
+│ │
+│ ├── other/
+│ │ ├── AllTask.jsx
+│ │ ├── CreateTask.jsx
+│ │ ├── Header.jsx
+│ │ └── TLNum.jsx
+│ │
+│ └── TaskList/
+│ ├── AcceptTask.jsx
+│ ├── CompleteTask.jsx
+│ ├── FailedTask.jsx
+│ ├── NewTask.jsx
+│ └── TaskList.jsx
+│
+├── context/
+│ └── AuthProvider.jsx
+│
+├── pages/ # (future page routes if needed)
+│
+└── utils/
+└── localStorage.js # LocalStorage helpers
+
+## 🔑 Default Login Credentials
+
+### Admin Account
+- **Email:** admin@me.com  
+- **Password:** 123  
+
+### Employee Accounts
+- Preloaded into `localStorage` (can be customized in `AuthProvider.jsx`).  
+
+## 🖥️ Usage Workflow
+1. 🔐 Login as **Admin** or **Employee**.  
+2. 👨‍💼 **Admin Dashboard** → Create & assign tasks.  
+3. 👨‍💻 **Employee Dashboard** → View tasks, stats, and progress.  
+4. 🚪 Logout securely when done.  
+
+## 📸 Screenshots
+<img width="502" height="439" alt="Login" src="https://github.com/user-attachments/assets/6741a2bf-c4c5-440a-a17b-f9c511153b2a" />
+<img width="941" height="324" alt="admin1" src="https://github.com/user-attachments/assets/dd43635a-9b8e-4652-ac1c-a6c09c8dde13" />
+<img width="923" height="439" alt="user" src="https://github.com/user-attachments/assets/921e4d19-fd6b-4ac2-b6c1-677fa88543f6" />
+
+
+## 📌 Future Enhancements
+- ✅ Backend integration with Node.js / Express  
+- ✅ JWT-based authentication system  
+- ✅ Database support (MongoDB / PostgreSQL)  
+- ✅ Real-time task updates via WebSockets  
+- ✅ Mobile responsive design  
