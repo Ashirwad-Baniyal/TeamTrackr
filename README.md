@@ -6,14 +6,6 @@ A **role-based task management application** built with React.
 
 ---
 
-## 📊 Project Overview
-This project demonstrates a **React-based role management system** where different user roles (Admin & Employee) get separate dashboards.  
-- Admins can assign tasks and monitor employee activity.  
-- Employees can log in securely and view only their tasks.  
-- All data is stored locally using browser persistence.  
-
----
-
 ## ✨ Features
 - 🔑 Role-based Authentication (Admin / Employee)  
 - 📌 Persistent login using LocalStorage  
