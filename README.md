@@ -6,6 +6,14 @@ A **role-based task management application** built with React.
 
 ---
 
+## 📊 Project Overview
+This project demonstrates a **React-based role management system** where different user roles (Admin & Employee) get separate dashboards.  
+- Admins can assign tasks and monitor employee activity.  
+- Employees can log in securely and view only their tasks.  
+- All data is stored locally using browser persistence.  
+
+---
+
 ## ✨ Features
 - 🔑 Role-based Authentication (Admin / Employee)  
 - 📌 Persistent login using LocalStorage  
@@ -15,39 +23,6 @@ A **role-based task management application** built with React.
 - 🎨 Minimal, modern UI with Tailwind CSS  
 
 ---
-
-## 📂 Project Structure
-src/
-│── App.jsx
-│
-├── components/
-│ ├── auth/
-│ │ └── Login.jsx
-│ │
-│ ├── Dashboard/
-│ │ ├── AdminDashboard.jsx
-│ │ └── EmployeeDashboard.jsx
-│ │
-│ ├── other/
-│ │ ├── AllTask.jsx
-│ │ ├── CreateTask.jsx
-│ │ ├── Header.jsx
-│ │ └── TLNum.jsx
-│ │
-│ └── TaskList/
-│ ├── AcceptTask.jsx
-│ ├── CompleteTask.jsx
-│ ├── FailedTask.jsx
-│ ├── NewTask.jsx
-│ └── TaskList.jsx
-│
-├── context/
-│ └── AuthProvider.jsx
-│
-├── pages/ # (future page routes if needed)
-│
-└── utils/
-└── localStorage.js # LocalStorage helpers
 
 ## 🔑 Default Login Credentials
 
