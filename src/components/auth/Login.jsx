@@ -30,7 +30,7 @@ const Login = ({handleLogin}) => {
                     setEmail(e.target.value)
                 }}
                 required 
-                className='text-gray-700 outline-none bg-transparent border-2 border-fuchsia-500 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter your email' 
+                className='text-white outline-none bg-transparent border-2 border-fuchsia-500 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter your email' 
                 />
                
                 <input
@@ -39,7 +39,7 @@ const Login = ({handleLogin}) => {
                     setPassword(e.target.value)
                 }}
                 required 
-                className='outline-none bg-transparent border-2 border-fuchsia-500 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400 text-gray-700' type="password" placeholder='Enter password' />
+                className='outline-none bg-transparent border-2 border-fuchsia-500 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400 text-white' type="password" placeholder='Enter password' />
                 <button className='mt-7 text-white border-none outline-none hover:bg-[#7449a6]  font-semibold bg-[#8756bd] text-lg py-2 px-8 w-full rounded-full placeholder:text-white'>Log in</button>
             </form>
         </div>
